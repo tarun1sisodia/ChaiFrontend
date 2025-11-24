@@ -19,9 +19,6 @@ dependencies:
   # Local storage for tokens
   shared_preferences: ^2.2.2
   
-  # Video player
-  video_player: ^2.8.1
-  
   # Image picker for avatar/cover upload
   image_picker: ^1.0.4
   

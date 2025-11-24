@@ -88,7 +88,10 @@ class ProfileScreen extends StatelessWidget {
                           backgroundImage: CachedNetworkImageProvider(
                             user.avatar,
                           ),
-                          onBackgroundImageError: (exception, stackTrace) {},
+                          onBackgroundImageError: (exception, stackTrace) {
+                            // Log error for debugging
+                            debugPrint('Error loading avatar: $exception');
+                          },
                           child: const Icon(Icons.person, size: 50),
                         ),
                       ),
